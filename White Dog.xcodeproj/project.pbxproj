@@ -12,7 +12,33 @@
 		D42446391EB1658E00D80D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42446371EB1658E00D80D60 /* Main.storyboard */; };
 		D424463B1EB1658E00D80D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D424463A1EB1658E00D80D60 /* Assets.xcassets */; };
 		D424463E1EB1658F00D80D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D424463C1EB1658F00D80D60 /* LaunchScreen.storyboard */; };
+		D424464C1EB16C1E00D80D60 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D424464B1EB16C1E00D80D60 /* IntentHandler.swift */; };
+		D42446501EB16C1E00D80D60 /* DogIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D42446491EB16C1D00D80D60 /* DogIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D424464E1EB16C1E00D80D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42446281EB1658E00D80D60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D42446481EB16C1D00D80D60;
+			remoteInfo = DogIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D42446541EB16C1E00D80D60 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D42446501EB16C1E00D80D60 /* DogIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D42446301EB1658E00D80D60 /* White Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "White Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +48,21 @@
 		D424463A1EB1658E00D80D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D424463D1EB1658F00D80D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D424463F1EB1658F00D80D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42446491EB16C1D00D80D60 /* DogIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DogIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D424464B1EB16C1E00D80D60 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D424464D1EB16C1E00D80D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42446551EB16C6000D80D60 /* White Dog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "White Dog.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D424462D1EB1658E00D80D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D42446461EB16C1D00D80D60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D42446321EB1658E00D80D60 /* White Dog */,
+				D424464A1EB16C1E00D80D60 /* DogIntents */,
 				D42446311EB1658E00D80D60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D42446301EB1658E00D80D60 /* White Dog.app */,
+				D42446491EB16C1D00D80D60 /* DogIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +93,7 @@
 		D42446321EB1658E00D80D60 /* White Dog */ = {
 			isa = PBXGroup;
 			children = (
+				D42446551EB16C6000D80D60 /* White Dog.entitlements */,
 				D42446331EB1658E00D80D60 /* AppDelegate.swift */,
 				D42446351EB1658E00D80D60 /* ViewController.swift */,
 				D42446371EB1658E00D80D60 /* Main.storyboard */,
@@ -62,6 +102,15 @@
 				D424463F1EB1658F00D80D60 /* Info.plist */,
 			);
 			path = "White Dog";
+			sourceTree = "<group>";
+		};
+		D424464A1EB16C1E00D80D60 /* DogIntents */ = {
+			isa = PBXGroup;
+			children = (
+				D424464B1EB16C1E00D80D60 /* IntentHandler.swift */,
+				D424464D1EB16C1E00D80D60 /* Info.plist */,
+			);
+			path = DogIntents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +123,34 @@
 				D424462C1EB1658E00D80D60 /* Sources */,
 				D424462D1EB1658E00D80D60 /* Frameworks */,
 				D424462E1EB1658E00D80D60 /* Resources */,
+				D42446541EB16C1E00D80D60 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D424464F1EB16C1E00D80D60 /* PBXTargetDependency */,
 			);
 			name = "White Dog";
 			productName = "White Dog";
 			productReference = D42446301EB1658E00D80D60 /* White Dog.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D42446481EB16C1D00D80D60 /* DogIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D42446511EB16C1E00D80D60 /* Build configuration list for PBXNativeTarget "DogIntents" */;
+			buildPhases = (
+				D42446451EB16C1D00D80D60 /* Sources */,
+				D42446461EB16C1D00D80D60 /* Frameworks */,
+				D42446471EB16C1D00D80D60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogIntents;
+			productName = DogIntents;
+			productReference = D42446491EB16C1D00D80D60 /* DogIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +163,16 @@
 				ORGANIZATIONNAME = "Developer Warriors";
 				TargetAttributes = {
 					D424462F1EB1658E00D80D60 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = M5PT8574CS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					D42446481EB16C1D00D80D60 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = M5PT8574CS;
 						ProvisioningStyle = Automatic;
@@ -115,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				D424462F1EB1658E00D80D60 /* White Dog */,
+				D42446481EB16C1D00D80D60 /* DogIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +209,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D42446471EB16C1D00D80D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D42446451EB16C1D00D80D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D424464C1EB16C1E00D80D60 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D424464F1EB16C1E00D80D60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D42446481EB16C1D00D80D60 /* DogIntents */;
+			targetProxy = D424464E1EB16C1E00D80D60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D42446371EB1658E00D80D60 /* Main.storyboard */ = {
@@ -262,7 +364,9 @@
 		D42446431EB1658F00D80D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "White Dog/White Dog.entitlements";
 				DEVELOPMENT_TEAM = M5PT8574CS;
 				INFOPLIST_FILE = "White Dog/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -275,12 +379,40 @@
 		D42446441EB1658F00D80D60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "White Dog/White Dog.entitlements";
 				DEVELOPMENT_TEAM = M5PT8574CS;
 				INFOPLIST_FILE = "White Dog/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.developerwarriors.White-Dog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D42446521EB16C1E00D80D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M5PT8574CS;
+				INFOPLIST_FILE = DogIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developerwarriors.White-Dog.DogIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D42446531EB16C1E00D80D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M5PT8574CS;
+				INFOPLIST_FILE = DogIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developerwarriors.White-Dog.DogIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +434,14 @@
 			buildConfigurations = (
 				D42446431EB1658F00D80D60 /* Debug */,
 				D42446441EB1658F00D80D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D42446511EB16C1E00D80D60 /* Build configuration list for PBXNativeTarget "DogIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42446521EB16C1E00D80D60 /* Debug */,
+				D42446531EB16C1E00D80D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
